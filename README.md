@@ -1,3 +1,3 @@
-# CosmicUB_Localhost
+# Termux_Scripts
 
-Cosmic Userbot Localhost script for termux ;)
+Executable scripts for termux made by dotA😉
