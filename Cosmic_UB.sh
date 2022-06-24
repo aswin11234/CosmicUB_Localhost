@@ -1,6 +1,6 @@
 clear
 echo -E "************************************"
-echo    "       Welcome to Fizilion :)       "
+echo    "       Welcome to CosmicUB ;)       "
 echo -E "************************************"
 
 sleep 5
@@ -9,8 +9,8 @@ clear
 pkg update && pkg upgrade -y
 pkg install clang curl git libcrypt libffi libiconv libjpeg* libjpeg-turbo libwebp libxml2 libxslt make ndk-sysroot openssl postgresql python readline wget zlib python3 rust build-essential libsodium -y
 
-git clone https://github.com/Fizi-Peeps/ProjectFizilion
-cd ProjectFizilion
+git clone https://github.com/SkyLab-Devs/CosmicUserbot
+cd CosmicUserbot
 
 pip install --upgrade pip setuptools
 pip install wheel
@@ -28,7 +28,7 @@ createuser botuser
 
 cd ..
 echo "pg_ctl -D $PREFIX/var/lib/postgresql start" > startbot.sh
-echo "cd ProjectFizilionFork" >> startbot.sh
+echo "cd CosmicUserbot" >> startbot.sh
 echo "python3 -m userbot" >> startbot.sh
 chmod 755 startbot.sh
 
@@ -37,3 +37,4 @@ echo "Now edit config.env with nano or anything you want, then run the userbot w
 echo "Please edit the db to postgresql://botuser:@localhost:5432/botdb"
 echo "Good luck!"
 echo "Thanks for using Fizilion"
+nano config.env
