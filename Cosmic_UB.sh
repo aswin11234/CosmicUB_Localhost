@@ -37,4 +37,6 @@ echo "Now edit config.env with nano or anything you want, then run the userbot w
 echo "Please edit the db to postgresql://botuser:@localhost:5432/botdb"
 echo "Good luck!"
 echo "Thanks for using Fizilion"
+echo "Press enter to continue:"
+read None
 nano config.env
