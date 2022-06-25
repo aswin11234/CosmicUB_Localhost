@@ -16,6 +16,7 @@ pip install --upgrade pip setuptools
 pip install wheel
 SODIUM_INSTALL=system pip install pynacl
 export CARGO_BUILD_TARGET=aarch64-linux-android
+MATHLIB=m pip3 install numpy
 pip install -r requirements.txt
 
 mv sample_config.env config.env
@@ -36,7 +37,7 @@ echo "Done."
 echo "Now edit config.env with nano or anything you want, then run the userbot with startbot.sh"
 echo "Please edit the db to postgresql://botuser:@localhost:5432/botdb"
 echo "Good luck!"
-echo "Thanks for using Fizilion"
+echo "Thanks for using CosmicUB"
 echo "Press enter to continue:"
 read None
-nano config.env
+nano CosmicUserbot/config.env
